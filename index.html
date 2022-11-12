@@ -27,7 +27,8 @@
       <!-- bg -->
       <div class="box">
         <img class="css-border" src="./FT.jpeg" alt="Wahyudi Nasty" />
-        <p class="center-p">Wahyudi | Nasty</p>
+        <p class="center-p"></p>
+        <p class="lead"></p>
         <div id="align">
           <a href="https://discord.com/users/1040246872876535959">
             <p class="green shadow"><i class="fab fa-discord"></i> Discord</p>
@@ -38,7 +39,7 @@
           <a href="https://github.com/wahyudinasty">
             <p class="green shadow"><i class="fab fa-github"></i> GitHub</p>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/wh___________________________/">
             <p class="green shadow"><i class="fab fa-instagram"></i> Instagram</p>
           </a>
           <a href="https://www.youtube.com/channel/UC6niLy7kRhj8yvuoAxvrsRQ">
@@ -59,9 +60,9 @@
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".center-p", {
-        duration: 1.5,
-        delay: 2.0,
-        text: "College Student | UPI YPTK Padang",
+        duration: 3.5,
+        delay: 1.0,
+        text: "Wahyudi | Nasty",
       });
       gsap.from("#align", {
         duration: 2.5,
@@ -69,13 +70,12 @@
         x: -20,
         opacity: 0,
       });
-      gsap.from(".navbar", {
-        duration: 1,
-        ease: "bounce.out",
-        y: -100,
-        opacity: 0,
+      gsap.to(".lead", {
+        duration: 4.5,
+        delay: 3.5,
+        text: "College Student | UPI YPTK Padang",
       });
-      gsap.from(".display-4", {
+      gsap.from(".css-border", {
         duration: 1,
         x: -50,
         opacity: 0,
