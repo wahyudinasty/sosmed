@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta content="noindex, nofollow" name="robots"/> -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" type="text/css" href="card.css" />
+    <title>Wahyudi Nasty</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- bg -->
+      <div class="box1">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+      </div>
+      <!-- bg -->
+      <div class="box">
+        <img class="css-border" src="./FT.jpeg" alt="Wahyudi Nasty" />
+        <p class="center-p">Wahyudi | Nasty</p>
+        <div id="align">
+          <a href="https://discord.com/users/1040246872876535959">
+            <p class="green shadow"><i class="fab fa-discord"></i> Discord</p>
+          </a>
+          <a href="https://www.facebook.com/ibnu.nasrul1906">
+            <p class="green shadow"><i class="fab fa-facebook"></i> Facebook</p>
+          </a>
+          <a href="https://github.com/wahyudinasty">
+            <p class="green shadow"><i class="fab fa-github"></i> GitHub</p>
+          </a>
+          <a href="#">
+            <p class="green shadow"><i class="fab fa-instagram"></i> Instagram</p>
+          </a>
+          <a href="https://www.youtube.com/channel/UC6niLy7kRhj8yvuoAxvrsRQ">
+            <p class="green shadow"><i class="fab fa-youtube"></i> Youtube</p>
+          </a>
+          <a href="https://saweria.co/wahyudinasty">
+            <p class="green shadow"><i class="fas fa-money-bill-wave-alt"></i> Saweria</p>
+          </a>
+          <a href="https://wahyudinasty.github.io/portfolio/">
+            <p class="green shadow"><i class="fas fa-globe"></i> Website</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".center-p", {
+        duration: 1.5,
+        delay: 2.0,
+        text: "College Student | UPI YPTK Padang",
+      });
+      gsap.from("#align", {
+        duration: 2.5,
+        ease: "circ.out",
+        x: -20,
+        opacity: 0,
+      });
+      gsap.from(".navbar", {
+        duration: 1,
+        ease: "bounce.out",
+        y: -100,
+        opacity: 0,
+      });
+      gsap.from(".display-4", {
+        duration: 1,
+        x: -50,
+        opacity: 0,
+        delay: 0.5,
+        ease: "back",
+      });
+    </script>
+  </body>
+</html>
