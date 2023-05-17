@@ -19,6 +19,7 @@
     background-image: radial-gradient(circle 369px at -2.9% 12.9%, rgb(255, 255, 255) 0%, #cddc39 46.4%, rgb(255, 255, 255) 100.7%);
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid black;
     margin: 0 20px;
     width: 400px;
     box-shadow: 5px 15px 30px rgba(57, 54, 54, 0.384);
