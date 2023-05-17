@@ -13,6 +13,8 @@
     />
 
     <link rel="stylesheet" type="text/css" href="card.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
     <title>Wahyudi Nasty</title>
   </head>
 
@@ -27,8 +29,7 @@
       <!-- bg -->
       <div class="box">
         <img class="css-border" src="./FT.jpeg" alt="Wahyudi Nasty" />
-        <p class="center-p"></p>
-        <p class="lead"></p>
+        <p class="center-p">Wahyudi | Nasty</p>
         <div id="align">
           <a href="https://discord.com/users/1040246872876535959">
             <p class="green shadow"><i class="fab fa-discord"></i> Discord</p>
@@ -39,7 +40,7 @@
           <a href="https://github.com/wahyudinasty">
             <p class="green shadow"><i class="fab fa-github"></i> GitHub</p>
           </a>
-          <a href="https://www.instagram.com/wh_nst19/">
+          <a href="#">
             <p class="green shadow"><i class="fab fa-instagram"></i> Instagram</p>
           </a>
           <a href="https://www.youtube.com/channel/UC6niLy7kRhj8yvuoAxvrsRQ">
@@ -49,23 +50,43 @@
             <p class="green shadow"><i class="fas fa-money-bill-wave-alt"></i> Saweria</p>
           </a>
           <a href="https://wahyudinasty.github.io/portfolio/">
-            <p class="green shadow"><i class="fas fa-globe"></i> Website 1</p>
-          </a>
-          <a href="https://wahyudinasty.github.io/Portofolio_2/">
-            <p class="green shadow"><i class="fas fa-globe"></i> Website 2</p>
+            <p class="green shadow"><i class="fas fa-globe"></i> Website</p>
           </a>
         </div>
       </div>
     </div>
-
+    <div class="baju">
+      <h1>Age Calculator</h1>
+      <main class="container1">
+        <div class="input">
+          <label for="birthdate">Enter Your Birthdate : </label>
+          <input class="green shadow" type="date" id="birthdate" />
+        </div>
+        <ul>
+          <li><span class="details" id="years"></span> Years</li>
+          <li><span class="details" id="months"></span> Months</li>
+          <li><span class="details" id="days"></span> Days</li>
+          <li><span class="details" id="hours"></span> Hours</li>
+          <li><span class="details" id="minutes"></span> Minutes</li>
+          <li><span class="details" id="seconds"></span> Seconds</li>
+        </ul>
+        <div class="btns">
+          <button onclick="calculate()" class="green shadow">Calculate</button>
+          <button onclick="reset()" class="green shadow">Reset</button>
+        </div>
+      </main>
+      <footer>
+        <a href="https://github.com/wahyudinasty">By Wahyudi Nasti</a>
+      </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".center-p", {
-        duration: 3.5,
-        delay: 1.0,
-        text: "Wahyudi | Nasty",
+        duration: 1.5,
+        delay: 2.0,
+        text: "College Student | UPI YPTK Padang",
       });
       gsap.from("#align", {
         duration: 2.5,
@@ -73,12 +94,13 @@
         x: -20,
         opacity: 0,
       });
-      gsap.to(".lead", {
-        duration: 4.5,
-        delay: 3.5,
-        text: "College Student | UPI YPTK Padang",
+      gsap.from(".navbar", {
+        duration: 1,
+        ease: "bounce.out",
+        y: -100,
+        opacity: 0,
       });
-      gsap.from(".css-border", {
+      gsap.from(".display-4", {
         duration: 1,
         x: -50,
         opacity: 0,
