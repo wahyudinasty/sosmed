@@ -100,7 +100,8 @@ body {
 /*waves****************************/
 
 .box1 {
-  position: fixed;
+  position: absolute;
+  z-index: -2;
   top: 0;
   transform: rotate(80deg);
   left: 0;
